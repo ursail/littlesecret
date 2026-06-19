@@ -1,27 +1,23 @@
 <!doctype html>
 <html lang="de">
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Little Secret Yacht – Live AIS Tracker</title>
 <meta name="description" content="Live AIS Position der Yacht Little Secret. MMSI 211647520.">
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <header class="site-header">
   <a class="logo" href="index.html">Little Secret <span>Yacht</span></a>
-  
-<nav class="main-nav">
-  <a href="index.html">Home</a>
-  <a href="turnprogramm.html">Törnprogramm</a>
-  <a href="yacht.html">Yacht</a>
-  <a href="skipper.html">Skipper</a>
-  <a href="livetracker.html">Live Tracker</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
-
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="turnprogramm.html">Törnprogramm</a>
+    <a href="yacht.html">Yacht</a>
+    <a href="skipper.html">Skipper</a>
+    <a href="livetracker.html">Live Tracker</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
   <button class="lang-toggle" type="button" onclick="toggleLanguage()">DE / EN</button>
 </header>
 
@@ -35,31 +31,34 @@
   <section class="section">
     <div class="tracker-intro">
       <h2>AIS Position</h2>
-      <p>Die Karte wird über VesselFinder geladen. Falls dein Browser oder GitHub Pages das direkte Einbetten blockiert, nutze den Button darunter.</p>
+      <p>Die Karte wird mit dem offiziellen VesselFinder-Widget geladen.</p>
       <div class="hero-actions">
         <a class="btn primary" href="https://www.vesselfinder.com/?mmsi=211647520" target="_blank" rel="noopener">Bei VesselFinder öffnen</a>
         <a class="btn secondary" href="https://www.marinetraffic.com/en/ais/details/ships/mmsi:211647520" target="_blank" rel="noopener">Bei MarineTraffic öffnen</a>
       </div>
     </div>
 
-    <div class="tracker-box">
-      <iframe
-        title="VesselFinder AIS Tracker Little Secret MMSI 211647520"
-        src="https://www.vesselfinder.com/?mmsi=211647520"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen>
-      </iframe>
+    <div class="tracker-box vf-widget-box">
+      <script type="text/javascript">
+        var width = "100%";
+        var height = "760";
+        var names = true;
+        var mmsi = "211647520";
+        var show_track = true;
+      </script>
+      <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+      <noscript>
+        <p>Der AIS-Tracker benötigt JavaScript. Bitte öffne die Position direkt bei VesselFinder.</p>
+      </noscript>
     </div>
 
     <div class="info-card tracker-note">
-      <h3>Hinweis zur Einbindung</h3>
-      <p>Einige AIS-Anbieter blockieren iFrame-Einbettungen auf externen Webseiten. Die Live-Position ist dann trotzdem über die Direktlinks oben erreichbar. Für eine dauerhaft eingebettete Karte wird später ein offizielles VesselFinder- oder MarineTraffic-Widget/API empfohlen.</p>
+      <h3>Hinweis</h3>
+      <p>Wenn die Karte trotz korrekter Einbindung nicht erscheint, blockiert der Browser wahrscheinlich externe Skripte oder Tracking-Inhalte. Dann funktioniert der Direktlink zu VesselFinder zuverlässig.</p>
       <p><strong>MMSI:</strong> 211647520</p>
     </div>
   </section>
 </main>
-
 
 <footer class="site-footer">
   <div>
@@ -71,6 +70,5 @@
   </div>
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>
