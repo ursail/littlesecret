@@ -1,1 +1,9 @@
-const body=document.body;const key='little-secret-lang';function setLang(lang){body.classList.toggle('en',lang==='en');localStorage.setItem(key,lang);document.querySelectorAll('[data-lang-label]').forEach(el=>el.textContent=lang==='en'?'DE':'EN')}setLang(localStorage.getItem(key)||'de');document.querySelectorAll('[data-lang-toggle]').forEach(btn=>btn.addEventListener('click',()=>setLang(body.classList.contains('en')?'de':'en')));document.querySelectorAll('[data-menu-toggle]').forEach(btn=>btn.addEventListener('click',()=>document.querySelector('.menu').classList.toggle('open')));
+
+function toggleLanguage(){
+  const html=document.documentElement;
+  const next=html.lang==='de'?'en':'de';
+  html.lang=next;
+  document.querySelectorAll('[data-de][data-en]').forEach(el=>{
+    el.textContent=el.dataset[next];
+  });
+}
