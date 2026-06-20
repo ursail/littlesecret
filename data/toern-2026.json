@@ -3,7 +3,7 @@
   "untertitel": "Von Monfalcone über Split, Dubrovnik, Korfu und Athen bis Kos.",
   "tage": [
     {
-      "datum": "2026-06-15",
+      "datum": "2026-06-20",
       "ort": "Cavtat",
       "land": "Kroatien",
       "status": "heute",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "datum": "2026-06-22",
+      "datum": "2026-06-14",
       "ort": "Split",
       "land": "Kroatien",
       "status": "geplant",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "datum": "2026-06-29",
+      "datum": "2026-06-21",
       "ort": "Dubrovnik",
       "land": "Kroatien",
       "status": "geplant",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "datum": "2026-07-10",
+      "datum": "2026-07-27",
       "ort": "Korfu",
       "land": "Griechenland",
       "status": "geplant",
