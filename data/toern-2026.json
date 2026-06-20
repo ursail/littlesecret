@@ -16,6 +16,18 @@
       ]
     },
     {
+      "datum": "2026-06-16",
+      "ort": "Luka Tiha",
+      "land": "Kroatien",
+      "status": "abgeschlossen",
+      "lat": 43.2152808,
+      "lon": 16.553617,
+      "text": "Grosse und ruhige Bucht. Perfekt für Festmachen mit Landleine. Naturbelassen",
+      "bilder": [
+        "/assets/img/IMG_4497.jpeg"
+      ]
+    },
+    {
       "datum": "2026-06-17",
       "ort": "Korčula",
       "land": "Kroatien",
@@ -106,18 +118,6 @@
       "bilder": [
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
-      ]
-    },
-    {
-      "datum": "2026-06-16",
-      "ort": "Luka Tiha",
-      "land": "Kroatien",
-      "status": "abgeschlossen",
-      "lat": 43.2152808,
-      "lon": 16.553617,
-      "text": "Grosse und ruhige Bucht. Perfekt für Festmachen mit Landleine. Naturbelassen",
-      "bilder": [
-        "/assets/img/IMG_4497.jpeg"
       ]
     }
   ]
