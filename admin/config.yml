@@ -1,1 +1,69 @@
+backend:
+  name: github
+  repo: ursail/littlesecret
+  branch: main
 
+media_folder: "assets/img"
+public_folder: "assets/img"
+
+locale: "de"
+
+collections:
+  - name: "toernprogramm"
+    label: "Toernprogramm 2026"
+    files:
+      - name: "toern2026"
+        label: "Tageslogbuch und Route"
+        file: "data/toern-2026.json"
+        format: "json"
+        fields:
+          - label: "Titel"
+            name: "titel"
+            widget: "string"
+          - label: "Untertitel"
+            name: "untertitel"
+            widget: "text"
+          - label: "Tage / Stopps"
+            name: "tage"
+            widget: "list"
+            summary: "{{fields.datum}} - {{fields.ort}}"
+            fields:
+              - label: "Datum"
+                name: "datum"
+                widget: "datetime"
+                date_format: "DD.MM.YYYY"
+                time_format: false
+                format: "YYYY-MM-DD"
+              - label: "Ort"
+                name: "ort"
+                widget: "string"
+              - label: "Land"
+                name: "land"
+                widget: "string"
+                required: false
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  - { label: "Geplant", value: "geplant" }
+                  - { label: "Heute", value: "heute" }
+                  - { label: "Abgeschlossen", value: "abgeschlossen" }
+              - label: "Breitengrad"
+                name: "lat"
+                widget: "number"
+                value_type: "float"
+              - label: "Laengengrad"
+                name: "lon"
+                widget: "number"
+                value_type: "float"
+              - label: "Kurztext"
+                name: "text"
+                widget: "text"
+              - label: "Bilder"
+                name: "bilder"
+                widget: "list"
+                field:
+                  label: "Bild"
+                  name: "bild"
+                  widget: "image"
+                required: false
