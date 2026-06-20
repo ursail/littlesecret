@@ -1,37 +1,30 @@
-# Little Secret Website für GitHub Pages
+# Little Secret Website Update
 
-## Aktualisieren auf GitHub
+## Upload auf GitHub Pages
 
-1. ZIP entpacken.
-2. Alle Dateien und Ordner in dein bestehendes Repository `littlesecret` kopieren.
-3. Alte Dateien bei gleicher Benennung ersetzen.
-4. Änderungen committen und pushen.
-5. GitHub Pages öffnet danach die neue `index.html`.
+1. ZIP-Datei herunterladen und entpacken.
+2. Auf GitHub das Repository `ursail/littlesecret` öffnen.
+3. Den Inhalt des entpackten Ordners hochladen, nicht den Ordner selbst.
+4. Bestehende Dateien ersetzen.
+5. Commit ausführen.
+6. Website prüfen: `https://ursail.github.io/littlesecret/`
 
-## Seitenstruktur
+## Ordnerstruktur
 
-- `index.html` – Startseite
-- `toernprogramm-2026.html` – interaktive Route Monfalcone, Split, Dubrovnik, Korfu, Athen, Kos
-- `skipper-urs.html` – Skipperseite
-- `yacht.html` – Informationen zur Little Secret
-- `livetracker.html` – VesselFinder Live Tracker MMSI 211647520
-- `kontakt.html` – Kontaktseite
+- `index.html` Startseite
+- `toernprogramm-2026.html` Route 2026 mit interaktiver Karte
+- `skipper-urs.html` Skipper-Seite
+- `yacht.html` Schiffsinformationen
+- `livetracker.html` VesselFinder Tracker mit MMSI 211647520
+- `kontakt.html` Kontaktseite
+- `css/style.css` Design
+- `js/route-map.js` Leaflet-Karte
+- `assets/img/` alle Bilder
 
-## Fotos ersetzen
+## Wichtig
 
-Yachtbilder liegen unter:
+Alle Bilder werden jetzt aus diesem Ordner geladen:
 
-`assets/yacht/`
+`assets/img/`
 
-Für ein echtes Portrait von Urs:
-
-1. Foto als `urs.jpeg` in `assets/skipper/` speichern.
-2. In `skipper-urs.html` den Bildpfad von `assets/yacht/little-secret-01.jpeg` auf `assets/skipper/urs.jpeg` ändern.
-
-## Route bearbeiten
-
-Die Marker und Popups sind in:
-
-`js/route-map.js`
-
-Dort können Texte, Koordinaten und Bilder pro Stopp geändert werden.
+Die Dateinamen müssen auf GitHub exakt gleich geschrieben sein wie im Code, inklusive Gross-/Kleinschreibung und `.jpeg`.
