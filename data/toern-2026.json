@@ -55,6 +55,19 @@
       ]
     },
     {
+      "datum": "2026-06-18",
+      "ort": "Šipanska Luka",
+      "land": "Kroatien",
+      "status": "abgeschlossen",
+      "lat": 42.7281147,
+      "lon": 17.8610672,
+      "text": "Kleines Städtchen. An Restaurant Boje angelegt. Kleiner Beach mit cooler Bar. Leider nur Cash Only. Direkte Fähre nach Dubrovnik",
+      "bilder": [
+        "/assets/img/IMG_4566.jpeg",
+        "/assets/img/15211797-bf24-46e2-a040-374e7e13f639.jpeg"
+      ]
+    },
+    {
       "datum": "2026-06-19",
       "ort": "Šunj - Lopud",
       "land": "Kroatien",
@@ -131,19 +144,6 @@
       "bilder": [
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
-      ]
-    },
-    {
-      "datum": "2026-06-18",
-      "ort": "Šipanska Luka",
-      "land": "Kroatien",
-      "status": "abgeschlossen",
-      "lat": 42.7281147,
-      "lon": 17.8610672,
-      "text": "Kleines Städtchen. An Restaurant Boje angelegt. Kleiner Beach mit cooler Bar. Leider nur Cash Only. Direkte Fähre nach Dubrovnik",
-      "bilder": [
-        "/assets/img/IMG_4566.jpeg",
-        "/assets/img/15211797-bf24-46e2-a040-374e7e13f639.jpeg"
       ]
     }
   ]
