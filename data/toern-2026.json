@@ -119,6 +119,19 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-15",
+      "ort": "Trogir",
+      "land": "Kroatien",
+      "status": "abgeschlossen",
+      "lat": 43.5147719,
+      "lon": 16.2500034,
+      "text": "Kurzer Halt und Besichtigung der Altstadt",
+      "bilder": [
+        "/assets/img/015c1416-17b9-477c-97e6-1eeef94b40fc.jpeg",
+        "/assets/img/b5bee11d-5eb1-4cf8-a330-75a89c99a8c9.jpeg"
+      ]
     }
   ]
 }
