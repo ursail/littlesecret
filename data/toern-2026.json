@@ -1,1 +1,66 @@
-
+{
+  "titel": "Törnprogramm 2026",
+  "untertitel": "Von Monfalcone über Split, Dubrovnik, Korfu und Athen bis Kos. Die Karte und das Tageslogbuch werden aus diesen Einträgen automatisch aufgebaut.",
+  "tage": [
+    {
+      "datum": "2026-06-15",
+      "ort": "Monfalcone",
+      "land": "Italien",
+      "status": "geplant",
+      "lat": 45.8103,
+      "lon": 13.5331,
+      "text": "Start des Törnprogramms 2026 in der nördlichen Adria. Einschiffen, Yacht vorbereiten, Sicherheitscheck und Proviantierung.",
+      "bilder": ["assets/img/little-secret-hero.jpeg", "assets/img/little-secret-01.jpeg"]
+    },
+    {
+      "datum": "2026-06-22",
+      "ort": "Split",
+      "land": "Kroatien",
+      "status": "geplant",
+      "lat": 43.5081,
+      "lon": 16.4402,
+      "text": "Dalmatien, Inselwelt, Altstadt und perfekter Etappenstopp auf dem Weg entlang der kroatischen Küste.",
+      "bilder": ["assets/img/little-secret-02.jpeg", "assets/img/little-secret-03.jpeg"]
+    },
+    {
+      "datum": "2026-06-29",
+      "ort": "Dubrovnik",
+      "land": "Kroatien",
+      "status": "geplant",
+      "lat": 42.6507,
+      "lon": 18.0944,
+      "text": "Südlicher Höhepunkt Kroatiens mit Stadtmauer, Altstadt und traumhaften Ankerbuchten in der Umgebung.",
+      "bilder": ["assets/img/little-secret-01.jpeg", "assets/img/little-secret-02.jpeg"]
+    },
+    {
+      "datum": "2026-07-10",
+      "ort": "Korfu",
+      "land": "Griechenland",
+      "status": "geplant",
+      "lat": 39.6243,
+      "lon": 19.9217,
+      "text": "Ankunft im Ionischen Meer. Grünes Griechenland, entspannte Häfen und klares Wasser.",
+      "bilder": ["assets/img/little-secret-03.jpeg", "assets/img/little-secret-hero.jpeg"]
+    },
+    {
+      "datum": "2026-07-24",
+      "ort": "Athen",
+      "land": "Griechenland",
+      "status": "geplant",
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "text": "Metropole, Akropolis und idealer Ausgangspunkt für den Saronischen Golf und die Ägäis.",
+      "bilder": ["assets/img/little-secret-01.jpeg", "assets/img/little-secret-03.jpeg"]
+    },
+    {
+      "datum": "2026-08-07",
+      "ort": "Kos",
+      "land": "Griechenland",
+      "status": "geplant",
+      "lat": 36.8915,
+      "lon": 27.2877,
+      "text": "Zielhafen des Törnprogramms 2026 im Dodekanes. Sonne, Inseln und griechisches Lebensgefühl.",
+      "bilder": ["assets/img/little-secret-hero.jpeg", "assets/img/little-secret-02.jpeg"]
+    }
+  ]
+}
