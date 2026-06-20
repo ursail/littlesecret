@@ -78,6 +78,19 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-19",
+      "ort": "Šunj - Lopud",
+      "land": "Kroatien",
+      "status": "abgeschlossen",
+      "lat": 42.6786695,
+      "lon": 17.9548077,
+      "text": "Touristenbucht mit sehr vielen Ausflugsboote. Ruhig in der Nacht",
+      "bilder": [
+        "/assets/img/BABBAB5A-A6BF-40CE-8ECD-C0AA54CF9C63.jpeg",
+        "/assets/img/IMG_4600.jpeg"
+      ]
     }
   ]
 }
