@@ -10,7 +10,7 @@ locale: "de"
 
 collections:
   - name: "toernprogramm"
-    label: "Toernprogramm 2026"
+    label: "Törnprogramm 2026"
     files:
       - name: "toern2026"
         label: "Tageslogbuch und Route"
@@ -52,7 +52,7 @@ collections:
                 name: "lat"
                 widget: "number"
                 value_type: "float"
-              - label: "Laengengrad"
+              - label: "Längengrad"
                 name: "lon"
                 widget: "number"
                 value_type: "float"
