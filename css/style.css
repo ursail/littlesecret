@@ -97,3 +97,11 @@ footer { border-top: 1px solid var(--line); background: var(--paper); }
   .route-map { height: 520px; }
   .tracker-frame iframe { min-height: 520px; }
 }
+
+.clean-list {
+  margin: 18px 0 0;
+  padding-left: 20px;
+}
+.clean-list li {
+  margin: 7px 0;
+}
