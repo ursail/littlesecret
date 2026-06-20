@@ -91,6 +91,20 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-17",
+      "ort": "Korčula",
+      "land": "Kroatien",
+      "status": "abgeschlossen",
+      "lat": 42.9501194,
+      "lon": 17.1613952,
+      "text": "Wunderschöner Stopp vor Korčula. Top Halt auf 8m. Mit dem Speedboat in die kleine Altstadt",
+      "bilder": [
+        "/assets/img/IMG_4548.jpeg",
+        "/assets/img/IMG_4552.jpeg",
+        "/assets/img/IMG_4537.jpeg"
+      ]
     }
   ]
 }
