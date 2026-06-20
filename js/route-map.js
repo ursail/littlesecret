@@ -1,52 +1,113 @@
-const stops = [
-  {
-    name: 'Monfalcone', country: 'Italien', lat: 45.8103, lon: 13.5331,
-    image: 'assets/img/little-secret-hero.jpeg',
-    text: 'Start des Törnprogramms 2026 in der nördlichen Adria. Einschiffen, Yacht vorbereiten und los Richtung Süden.'
-  },
-  {
-    name: 'Split', country: 'Kroatien', lat: 43.5081, lon: 16.4402,
-    image: 'assets/img/little-secret-01.jpeg',
-    text: 'Dalmatien, Inselwelt, Altstadt und perfekter Etappenstopp auf dem Weg entlang der kroatischen Küste.'
-  },
-  {
-    name: 'Dubrovnik', country: 'Kroatien', lat: 42.6507, lon: 18.0944,
-    image: 'assets/img/little-secret-02.jpeg',
-    text: 'Südlicher Höhepunkt Kroatiens mit Stadtmauer, Altstadt und traumhaften Ankerbuchten in der Umgebung.'
-  },
-  {
-    name: 'Korfu', country: 'Griechenland', lat: 39.6243, lon: 19.9217,
-    image: 'assets/img/little-secret-03.jpeg',
-    text: 'Ankunft im Ionischen Meer. Grünes Griechenland, entspannte Häfen und klares Wasser.'
-  },
-  {
-    name: 'Athen', country: 'Griechenland', lat: 37.9838, lon: 23.7275,
-    image: 'assets/img/little-secret-01.jpeg',
-    text: 'Metropole, Akropolis und idealer Ausgangspunkt für den Saronischen Golf und die Ägäis.'
-  },
-  {
-    name: 'Kos', country: 'Griechenland', lat: 36.8915, lon: 27.2877,
-    image: 'assets/img/little-secret-hero.jpeg',
-    text: 'Zielhafen des Törnprogramms 2026 im Dodekanes. Sonne, Inseln und griechisches Lebensgefühl.'
+const fallbackData = {
+  titel: 'Törnprogramm 2026',
+  untertitel: 'Von Monfalcone über Split, Dubrovnik, Korfu und Athen bis Kos.',
+  tage: []
+};
+
+function formatDate(dateString) {
+  const date = new Date(`${dateString}T00:00:00`);
+  return date.toLocaleDateString('de-CH', { day: '2-digit', month: 'long', year: 'numeric' });
+}
+
+function statusLabel(status) {
+  const map = {
+    geplant: '○ Geplant',
+    heute: '● Heute / aktuell',
+    abgeschlossen: '✓ Abgeschlossen'
+  };
+  return map[status] || '○ Geplant';
+}
+
+function normalizeImagePath(path) {
+  if (!path) return 'assets/img/little-secret-hero.jpeg';
+  return path.replace(/^\//, '');
+}
+
+function imageHtml(images, alt) {
+  const list = Array.isArray(images) && images.length ? images.slice(0, 3) : ['assets/img/little-secret-hero.jpeg'];
+  return list.map(src => `<img src="${normalizeImagePath(src)}" alt="${alt}">`).join('');
+}
+
+async function loadRouteData() {
+  try {
+    const response = await fetch('data/toern-2026.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('Logbuch nicht gefunden');
+    return await response.json();
+  } catch (error) {
+    console.warn(error);
+    return fallbackData;
   }
-];
+}
 
-const map = L.map('route-map', { scrollWheelZoom: false }).setView([41.5, 18.9], 6);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+function renderHeader(data) {
+  const title = document.getElementById('route-title');
+  const subtitle = document.getElementById('route-subtitle');
+  if (title && data.titel) title.textContent = data.titel;
+  if (subtitle && data.untertitel) subtitle.textContent = data.untertitel;
+}
 
-const latlngs = stops.map(s => [s.lat, s.lon]);
-L.polyline(latlngs, { weight: 4, opacity: 0.85 }).addTo(map);
+function renderLogbook(days) {
+  const container = document.getElementById('logbook');
+  if (!container) return;
+  if (!days.length) {
+    container.innerHTML = '<p class="note">Noch keine Logbuch-Einträge vorhanden.</p>';
+    return;
+  }
+  container.innerHTML = days.map((day, index) => `
+    <article class="day-entry ${day.status || 'geplant'}">
+      <div class="day-date">${formatDate(day.datum)}</div>
+      <div class="day-card">
+        <div class="day-meta"><span class="status-pill ${day.status || 'geplant'}">${statusLabel(day.status)}</span><span>Etappe ${index + 1}</span></div>
+        <h3>${day.ort}${day.land ? `, ${day.land}` : ''}</h3>
+        <p>${day.text || ''}</p>
+        <div class="day-gallery">${imageHtml(day.bilder, day.ort)}</div>
+      </div>
+    </article>
+  `).join('');
+}
 
-stops.forEach((s, i) => {
-  L.marker([s.lat, s.lon]).addTo(map).bindPopup(`
-    <img class="popup-img" src="${s.image}" alt="${s.name}">
-    <strong>${i + 1}. ${s.name}</strong><br>
-    <em>${s.country}</em>
-    <p>${s.text}</p>
-  `);
+function renderMap(days) {
+  const mapElement = document.getElementById('route-map');
+  if (!mapElement || typeof L === 'undefined') return;
+  const validDays = days.filter(day => Number.isFinite(Number(day.lat)) && Number.isFinite(Number(day.lon)));
+  const map = L.map('route-map', { scrollWheelZoom: false }).setView([41.5, 18.9], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  if (!validDays.length) return;
+
+  const allLatLngs = validDays.map(day => [Number(day.lat), Number(day.lon)]);
+  const doneLatLngs = validDays
+    .filter(day => day.status === 'abgeschlossen' || day.status === 'heute')
+    .map(day => [Number(day.lat), Number(day.lon)]);
+
+  if (allLatLngs.length > 1) {
+    L.polyline(allLatLngs, { weight: 4, opacity: 0.7, dashArray: '8 8' }).addTo(map);
+  }
+  if (doneLatLngs.length > 1) {
+    L.polyline(doneLatLngs, { weight: 6, opacity: 0.95 }).addTo(map);
+  }
+
+  validDays.forEach((day, index) => {
+    const marker = L.marker([Number(day.lat), Number(day.lon)]).addTo(map);
+    const firstImage = normalizeImagePath(Array.isArray(day.bilder) ? day.bilder[0] : '');
+    marker.bindPopup(`
+      <img class="popup-img" src="${firstImage}" alt="${day.ort}">
+      <strong>${index + 1}. ${day.ort}</strong><br>
+      <em>${day.land || ''}</em>
+      <p><strong>${statusLabel(day.status)}</strong></p>
+      <p>${day.text || ''}</p>
+    `);
+  });
+
+  map.fitBounds(allLatLngs, { padding: [35, 35] });
+}
+
+loadRouteData().then(data => {
+  const days = Array.isArray(data.tage) ? data.tage : [];
+  renderHeader(data);
+  renderMap(days);
+  renderLogbook(days);
 });
-
-map.fitBounds(latlngs, { padding: [35, 35] });
