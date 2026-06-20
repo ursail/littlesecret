@@ -3,19 +3,6 @@
   "untertitel": "Von Monfalcone über Split, Dubrovnik, Korfu und Athen bis Kos.",
   "tage": [
     {
-      "datum": "2026-06-20",
-      "ort": "Cavtat",
-      "land": "Kroatien",
-      "status": "heute",
-      "lat": 42.5841251,
-      "lon": 18.2204232,
-      "text": "Abschluss einer wunderschönen Woche",
-      "bilder": [
-        "assets/img/little-secret-hero.jpeg",
-        "assets/img/little-secret-01.jpeg"
-      ]
-    },
-    {
       "datum": "2026-06-14",
       "ort": "Split",
       "land": "Kroatien",
@@ -26,6 +13,18 @@
       "bilder": [
         "assets/img/little-secret-02.jpeg",
         "assets/img/little-secret-03.jpeg"
+      ]
+    },
+    {
+      "datum": "2026-06-20",
+      "ort": "Cavtat",
+      "land": "Kroatien",
+      "status": "heute",
+      "lat": 42.5841251,
+      "lon": 18.2204232,
+      "text": "Abschluss einer wunderschönen Woche",
+      "bilder": [
+        "/assets/img/IMG_4607.jpeg"
       ]
     },
     {
