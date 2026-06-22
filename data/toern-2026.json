@@ -84,7 +84,7 @@
       "datum": "2026-06-20",
       "ort": "Cavtat",
       "land": "Kroatien",
-      "status": "heute",
+      "status": "abgeschlossen",
       "lat": 42.5841251,
       "lon": 18.2204232,
       "text": "Abschluss einer wunderschönen Woche",
@@ -106,6 +106,16 @@
         "/assets/img/IMG_4630.jpeg",
         "/assets/img/IMG_4631.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-22",
+      "ort": "Molunat",
+      "land": "Kroatien",
+      "status": "heute",
+      "lat": 42.4506071,
+      "lon": 18.4319888,
+      "text": "Letzter Stopp für Überfahrt nach Korfu.",
+      "bilder": []
     },
     {
       "datum": "2026-07-27",
@@ -145,16 +155,6 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
-    },
-    {
-      "datum": "2026-06-22",
-      "ort": "Molunat",
-      "land": "Kroatien",
-      "status": "heute",
-      "lat": 42.4506071,
-      "lon": 18.4319888,
-      "text": "Letzter Stopp für Überfahrt nach Korfu.",
-      "bilder": []
     }
   ]
 }
