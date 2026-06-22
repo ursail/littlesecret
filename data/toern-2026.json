@@ -116,7 +116,9 @@
       "lat": 42.4506071,
       "lon": 18.4319888,
       "text": "Letzter Stopp für Überfahrt nach Korfu.",
-      "bilder": []
+      "bilder": [
+        "/assets/img/IMG_4681.jpeg"
+      ]
     },
     {
       "datum": "2026-06-29",
