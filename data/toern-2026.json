@@ -145,6 +145,16 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-22",
+      "ort": "Molunat",
+      "land": "Kroatien",
+      "status": "heute",
+      "lat": 42.4506071,
+      "lon": 18.4319888,
+      "text": "Letzter Stopp für Überfahrt nach Korfu.",
+      "bilder": []
     }
   ]
 }
