@@ -118,7 +118,7 @@
       "bilder": []
     },
     {
-      "datum": "2026-07-27",
+      "datum": "2026-06-29",
       "ort": "Korfu",
       "land": "Griechenland",
       "status": "geplant",
@@ -126,8 +126,7 @@
       "lon": 19.9217,
       "text": "Ankunft im Ionischen Meer. Grünes Griechenland, entspannte Häfen und klares Wasser.",
       "bilder": [
-        "assets/img/little-secret-03.jpeg",
-        "assets/img/little-secret-hero.jpeg"
+        "/assets/img/IMG_0913.jpeg"
       ]
     },
     {
