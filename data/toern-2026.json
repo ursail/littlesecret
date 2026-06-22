@@ -98,13 +98,13 @@
       "datum": "2026-06-21",
       "ort": "Dubrovnik",
       "land": "Kroatien",
-      "status": "geplant",
+      "status": "abgeschlossen",
       "lat": 42.6507,
       "lon": 18.0944,
-      "text": "Südlicher Höhepunkt Kroatiens mit Stadtmauer, Altstadt und traumhaften Ankerbuchten in der Umgebung.",
+      "text": "Südlicher Höhepunkt Kroatiens mit Stadtmauer, Altstadt und Drehort von Games of Thrones.",
       "bilder": [
-        "assets/img/little-secret-01.jpeg",
-        "assets/img/little-secret-02.jpeg"
+        "/assets/img/IMG_4630.jpeg",
+        "/assets/img/IMG_4631.jpeg"
       ]
     },
     {
