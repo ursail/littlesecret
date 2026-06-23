@@ -121,6 +121,18 @@
       ]
     },
     {
+      "datum": "2026-06-23",
+      "ort": "Adria",
+      "land": "",
+      "status": "heute",
+      "lat": 40.9555621,
+      "lon": 18.8724535,
+      "text": "30h Überfahrt nach Korfu.",
+      "bilder": [
+        "/assets/img/DC5D6613-CBC0-461C-87AB-9E19F3328C9D.jpeg"
+      ]
+    },
+    {
       "datum": "2026-06-29",
       "ort": "Korfu",
       "land": "Griechenland",
@@ -156,18 +168,6 @@
       "bilder": [
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
-      ]
-    },
-    {
-      "datum": "2026-06-23",
-      "ort": "Adria",
-      "land": "",
-      "status": "heute",
-      "lat": 40.9555621,
-      "lon": 18.8724535,
-      "text": "30h Überfahrt nach Korfu.",
-      "bilder": [
-        "/assets/img/DC5D6613-CBC0-461C-87AB-9E19F3328C9D.jpeg"
       ]
     }
   ]
