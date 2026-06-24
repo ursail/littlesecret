@@ -162,7 +162,7 @@
       "datum": "2026-08-07",
       "ort": "Kos",
       "land": "Griechenland",
-      "status": "geplant",
+      "status": "abgeschlossen",
       "lat": 36.8915,
       "lon": 27.2877,
       "text": "Zielhafen des Törnprogramms 2026 im Dodekanes. Sonne, Inseln und griechisches Lebensgefühl.",
@@ -170,6 +170,16 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-24",
+      "ort": "Erikoussa",
+      "land": "Griechenland",
+      "status": "heute",
+      "lat": 39.8778388,
+      "lon": 19.5823031,
+      "text": "Erster Halt nach Überfahrt. Uns erwartet am Abend feines Essen beim Griechen. 😋",
+      "bilder": []
     }
   ]
 }
