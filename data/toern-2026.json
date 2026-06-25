@@ -184,6 +184,16 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
+    },
+    {
+      "datum": "2026-06-25",
+      "ort": "Porto Timoni",
+      "land": "Griechenland",
+      "status": "heute",
+      "lat": 39.7149825,
+      "lon": 19.6556954,
+      "text": "Bade- und Frühstücksstopp",
+      "bilder": []
     }
   ]
 }
