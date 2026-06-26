@@ -160,6 +160,18 @@
       ]
     },
     {
+      "datum": "2026-06-25",
+      "ort": "Liapades",
+      "land": "Griechenland",
+      "status": "abgeschlossen",
+      "lat": 39.667053,
+      "lon": 19.7244914,
+      "text": "Atemberaubende Bucht. Ganz für uns alleine.",
+      "bilder": [
+        "/assets/img/IMG_4753.jpeg"
+      ]
+    },
+    {
       "datum": "2026-06-29",
       "ort": "Korfu",
       "land": "Griechenland",
@@ -195,18 +207,6 @@
       "bilder": [
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
-      ]
-    },
-    {
-      "datum": "2026-06-25",
-      "ort": "Liapades",
-      "land": "Griechenland",
-      "status": "abgeschlossen",
-      "lat": 39.667053,
-      "lon": 19.7244914,
-      "text": "Atemberaubende Bucht. Ganz für uns alleine.",
-      "bilder": [
-        "/assets/img/IMG_4753.jpeg"
       ]
     }
   ]
