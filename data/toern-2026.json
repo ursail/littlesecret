@@ -151,11 +151,13 @@
       "datum": "2026-06-25",
       "ort": "Porto Timoni",
       "land": "Griechenland",
-      "status": "heute",
+      "status": "abgeschlossen",
       "lat": 39.7149825,
       "lon": 19.6556954,
       "text": "Bade- und Frühstücksstopp",
-      "bilder": []
+      "bilder": [
+        "/assets/img/7fc83e74-cb98-454a-8d84-e3a8595f26b7.jpeg"
+      ]
     },
     {
       "datum": "2026-06-29",
