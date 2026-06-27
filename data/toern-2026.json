@@ -175,11 +175,13 @@
       "datum": "2026-06-26",
       "ort": "Kassiopi",
       "land": "Griechenland",
-      "status": "heute",
+      "status": "abgeschlossen",
       "lat": 39.7896446,
       "lon": 19.9137728,
       "text": "Nordost von Korfu",
-      "bilder": []
+      "bilder": [
+        "/assets/img/IMG_4799.jpeg"
+      ]
     },
     {
       "datum": "2026-06-29",
