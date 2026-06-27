@@ -184,6 +184,16 @@
       ]
     },
     {
+      "datum": "2026-06-27",
+      "ort": "Houhoulias Beach",
+      "land": "Griechenland",
+      "status": "heute",
+      "lat": 39.7459425,
+      "lon": 19.9394459,
+      "text": "Herrliche Bucht",
+      "bilder": []
+    },
+    {
       "datum": "2026-06-29",
       "ort": "Korfu",
       "land": "Griechenland",
@@ -220,16 +230,6 @@
         "assets/img/little-secret-hero.jpeg",
         "assets/img/little-secret-02.jpeg"
       ]
-    },
-    {
-      "datum": "2026-06-27",
-      "ort": "Houhoulias Beach",
-      "land": "Griechenland",
-      "status": "heute",
-      "lat": 39.7459425,
-      "lon": 19.9394459,
-      "text": "Herrliche Bucht",
-      "bilder": []
     }
   ]
 }
