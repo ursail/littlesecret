@@ -194,6 +194,19 @@
       "bilder": []
     },
     {
+      "datum": "2026-06-28",
+      "ort": "Petriti",
+      "land": "Griechenland",
+      "status": "abgeschlossen",
+      "lat": 39.451955,
+      "lon": 20.0032989,
+      "text": "Letzte Bucht vor Abschluss Split-Korfu. Feines Restaurant direkt am Wasser",
+      "bilder": [
+        "/assets/img/IMG_4843.jpeg",
+        "/assets/img/IMG_4858.jpeg"
+      ]
+    },
+    {
       "datum": "2026-06-29",
       "ort": "Korfu",
       "land": "Griechenland",
