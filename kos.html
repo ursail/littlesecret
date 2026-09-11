@@ -32,9 +32,6 @@
     </aside>
     <section id="kos-map" class="kos-map" aria-label="Interaktive Karte der Kos Route"></section>
   </main>
-  <script>
-    fetch('_nav.html').then(r=>r.ok?r.text():'').then(html=>{document.getElementById('site-nav').innerHTML=html;}).catch(()=>{});
-  </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="js/kos.js"></script>
 </body>
