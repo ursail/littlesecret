@@ -15,7 +15,7 @@
     document.querySelector("[data-total-nm]").textContent=`${total.toFixed(1)} sm`;
     document.querySelector("[data-place-count]").textContent=data.places.length;
     const map=L.map("kos-map",{zoomControl:false}); L.control.zoom({position:"bottomright"}).addTo(map);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors'}).addTo(map);
     const icon=p=>L.divIcon({className:"",html:`<div style="width:30px;height:30px;background:${TYPE_COLORS[p.type]||'#087b9e'};border:3px solid white;border-radius:50% 50% 50% 8px;transform:rotate(-45deg);box-shadow:0 4px 10px #002c4060"><div style="transform:rotate(45deg);line-height:24px;text-align:center;color:white;font-size:11px">●</div></div>`,iconSize:[30,30],iconAnchor:[15,28]});
     const markers={};
     data.places.forEach(p=>{ markers[p.id]=L.marker([p.lat,p.lon],{icon:icon(p)}).addTo(map).bindPopup(`<div class="kos-popup"><h3>${esc(p.name)}</h3><p><b>${esc(p.stage)}</b></p><p>${esc(p.summary)}</p><p><b>Hafen / Ankern:</b> ${esc(p.berthing)}</p></div>`); markers[p.id].on("click",()=>select(p.id)); });
