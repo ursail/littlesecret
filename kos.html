@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Kos 2026 Segelroute: Kos, Pserimos, Plati, Kalymnos und Leros.">
+  <title>Kos 2026 | Ursail</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynHTD7uD3jsHjS5y8U0wTQYl5rsM=" crossorigin="">
+  <link rel="stylesheet" href="css/kos.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <button class="kos-btn kos-btn-primary kos-mobile" data-panel-toggle aria-label="Routenübersicht öffnen">☰ Kos Route</button>
+  <main class="kos-shell">
+    <aside class="kos-panel">
+      <header class="kos-hero">
+        <div class="kos-kicker">Little Secret · Sailing Guide</div>
+        <h1>Kos → Pserimos → Kalymnos → Leros → Kos</h1>
+        <p>Interaktive Planungsübersicht mit Highlights, Ankerhinweisen, GPX und KML. Plati bleibt als optionaler Planungsstopp enthalten.</p>
+        <div class="kos-stats">
+          <div class="kos-stat"><strong data-total-nm>–</strong><span>Direktdistanz</span></div>
+          <div class="kos-stat"><strong>4</strong><span>Hauptetappen</span></div>
+          <div class="kos-stat"><strong data-place-count>–</strong><span>Markierte Orte</span></div>
+        </div>
+      </header>
+      <nav class="kos-toolbar" aria-label="Kartenfunktionen">
+        <button class="kos-btn kos-btn-primary" data-fit>Gesamtroute</button>
+        <button class="kos-btn" data-gpx>GPX laden</button>
+        <button class="kos-btn" data-kml>KML laden</button>
+      </nav>
+      <div id="kos-cards" class="kos-cards" aria-live="polite"></div>
+    </aside>
+    <section id="kos-map" class="kos-map" aria-label="Interaktive Karte der Kos Route"></section>
+  </main>
+  <script>
+    fetch('_nav.html').then(r=>r.ok?r.text():'').then(html=>{document.getElementById('site-nav').innerHTML=html;}).catch(()=>{});
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/kos.js"></script>
+</body>
+</html>
